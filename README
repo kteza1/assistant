@@ -1,0 +1,25 @@
+MAC OSX
+-------
+
+brew install portaudio
+python3 -m pip install PyAudio
+python3 -m pip install SpeechRecognition
+brew install flac --> google speech recognition seems to be working with this
+brew install pocketsphinx
+
+LNUX
+----
+sudo apt-get install portaudio19-dev flac pocketsphinx-utils
+pip3 install pyaudio
+pip3 install speechrecognition
+
+Install homehbrew and follow mac osx steps ;)
+
+pocketsphinx_continuous -inmic yes
+
+Fixing below error
+------------------
+ad_oss.c(103): Failed to open audio device(/dev/dsp): No such file or directory
+FATAL_ERROR: "continuous.c", line 246: Failed to open audio device
+
+sudo apt-get install pulseaudio libpulse-dev osspd
